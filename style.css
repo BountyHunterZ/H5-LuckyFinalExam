@@ -1,0 +1,12 @@
+:root {
+  --color-envelope: rgb(174,45,36);
+  --color-ticket: rgb(241,199,20);
+}
+
+*{
+
+}
+
+body {
+  background-color: var(--color-envelope);
+}
