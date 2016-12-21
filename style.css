@@ -1,6 +1,8 @@
 :root {
   --color-envelope: rgb(174,45,36);
   --color-ticket: rgb(241,199,20);
+  --height-main: 480px;
+  --height-inner: 460px;
 }
 
 *{
@@ -17,29 +19,90 @@ body {
   margin-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
-  height: 480px;
+  height: var(--height-main);
 }
 
 #formPage {
   height: inherit;
   width: inherit;
+
 }
 
 .formPart {
+  max-width: 400px;
   height: inherit;
   left: 20px;
   right: 20px;
   position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #pocketBack {
   z-index: -3;
+  background-image: url('images/redpocketback.png');
 }
 
 #pocketInner{
   z-index: -2;
 }
 
+#ticket {
+  margin: 0 20px 40px 20px;
+  background-color: var(--color-ticket);
+  border-radius: 5px;
+  border-color: #000;
+  border-width: 4px;
+  height: var(--height-inner);
+  border-style: solid;
+}
+
 #pocketFront{
   z-index: -1;
+  background-image: url('images/redpocketfront.png');
+}
+
+#cornerMark {
+  margin-top: 10px;
+  background-color: var(--color-envelope);
+  width: 205px;
+  height: 32px;
+  font-weight: bold;
+  font-size: 20;
+  line-height: 32px;
+  color: #fff;
+  text-align: center;
+  vertical-align:middle;
+}
+
+#titleDiv {
+  background-image: url('images/bigtitle.png');
+  background-size: contain;
+  width: 277px;
+  height: 123px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+}
+
+#nameLabelDiv {
+  background-image: url('images/namelabel.png');
+  background-size: contain;
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 193px;
+  height: 20px;
+}
+
+#nameInputDiv {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 36px;
+  margin: 10px 15px 0 15px;
+  border-color: #000;
+  border-width: 3px;
+  border-style: solid;;
 }
