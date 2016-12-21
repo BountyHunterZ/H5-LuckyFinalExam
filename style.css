@@ -4,9 +4,42 @@
 }
 
 *{
-
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: var(--color-envelope);
+  background-color: #fff;
+  background-image: url('images/background.png');
+}
+
+#universal {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 480px;
+}
+
+#formPage {
+  height: inherit;
+  width: inherit;
+}
+
+.formPart {
+  height: inherit;
+  left: 20px;
+  right: 20px;
+  position: absolute;
+}
+
+#pocketBack {
+  z-index: -3;
+}
+
+#pocketInner{
+  z-index: -2;
+}
+
+#pocketFront{
+  z-index: -1;
 }
