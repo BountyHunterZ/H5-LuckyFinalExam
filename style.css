@@ -1,6 +1,6 @@
 :root {
   --color-envelope: rgb(174,45,36);
-  --color-ticket: rgb(241,199,20);
+  --color-ticket: #fad133;
   --height-main: 480px;
   --height-inner: 460px;
 }
@@ -104,6 +104,17 @@ body {
   color: #fff;
   text-align: center;
   vertical-align:middle;
+}
+
+#cornerMark > div {
+  background-image: url('images/timeLabel.png');
+  background-size: contain;
+  background-position: center center;;
+  background-repeat: no-repeat;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 32px;
 }
 
 #titleDiv {

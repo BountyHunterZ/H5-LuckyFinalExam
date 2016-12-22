@@ -9,7 +9,7 @@ function draw() {
 
   document.getElementById("result").src = "http://59.110.0.244/DrawMyLuck.aspx?name=" +
     document.getElementById("nameValue").value + "&subject=" +
-    document.getElementById("subjectValue").value + "&year=" +
+    document.getElementById("subjectValue").value + "&year=201" +
     document.getElementById("yearValue").value + "&month=" +
     document.getElementById("monthValue").value + "&day=" +
     document.getElementById("dayValue").value;
