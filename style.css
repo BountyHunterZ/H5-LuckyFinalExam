@@ -103,12 +103,130 @@ body {
   height: 20px;
 }
 
-#nameInputDiv {
+.inputDiv {
   background-color: #fff;
   border-radius: 5px;
   height: 36px;
-  margin: 10px 15px 0 15px;
-  border-color: #000;
+  border-color: #fad133;
   border-width: 3px;
-  border-style: solid;;
+  border-style: solid;
+}
+
+#nameInputDiv {
+  margin: 10px 15px 0 15px;
+  border-color: #fad133;
+}
+
+.leftFloat{
+  float: left;
+  height: 36px;
+}
+
+.floatclear {
+  clear: both;
+}
+
+#subjectLabelDiv {
+  width: 25%;
+  background-image: url('images/subject.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-left: 5%;
+}
+
+#subjectInputDiv {
+  margin-left: 3%;
+  width: 60%;
+  margin-top: -1px;
+}
+
+#timeLabelDiv {
+  width: 25%;
+  background-image: url('images/examtime.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-left: 5%;
+}
+
+#timeInputDiv{
+  margin-left: 3%;
+  width: 65%;
+  margin-top: -1px;
+}
+
+#y201 {
+  width: 17.5%;
+  background-image: url('images/201.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#yearInput {
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 9%;
+  margin-top: -1px;
+}
+
+#year {
+  width: 9%;
+  background-image: url('images/year.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#monthInput {
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 15%;
+  margin-top: -1px;
+}
+
+#month {
+  width: 9%;
+  background-image: url('images/month.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#dayInput {
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 15%;
+  margin-top: -1px;
+}
+
+#day {
+  width: 9%;
+  background-image: url('images/day.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#drawDiv {
+  text-align: center;
+}
+
+#drawDiv > a > img {
+  margin-top: 5px;
+  width: 85%;
+}
+
+#drawClicker {
+  z-index: 3;
+  margin-left: 75%;
+  margin-top: 20px;
+  background-image: url('images/clicker.png');
+  position: absolute;
+  width: 32px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
