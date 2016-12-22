@@ -22,7 +22,7 @@
             <div id="nameLabelDiv">
             </div>
             <div id="nameInputDiv" class="inputDiv">
-              <input id="nameValue" type="text" placeholder="haha"/>
+              <input id="nameValue" type="text" placeholder="李小明"/>
             </div>
           </div>
         </div>
@@ -31,37 +31,40 @@
           <div id="subjectLabelDiv" class="leftFloat">
           </div>
           <div id="subjectInputDiv" class="inputDiv leftFloat">
-            <input id="subjectValue" type="text" placeholder="haha"/>
+            <input id="subjectValue" type="text" placeholder="高等数学"/>
           </div>
           <div class="floatclear" style="height:12px"></div>
           <div id="timeLabelDiv" class="leftFloat">
           </div>
           <div id="timeInputDiv" class="leftFloat">
             <div id="y201" class="leftFloat"></div>
-            <div id="yearInput" class="leftFloat inputDiv"></div>
+            <div id="yearInput" class="leftFloat inputDiv">
+              <input id="yearValue" type="text" placeholder="7"/></div>
             <div id="year" class="leftFloat"></div>
-            <div id="monthInput" class="leftFloat inputDiv"></div>
+            <div id="monthInput" class="leftFloat inputDiv">
+              <input id="monthValue" type="text" placeholder="1"/></div>
             <div id="month" class="leftFloat"></div>
-            <div id="dayInput" class="leftFloat inputDiv"></div>
+            <div id="dayInput" class="leftFloat inputDiv">
+              <input id="dayValue" type="text" placeholder="4"/></div>
             <div id="day" class="leftFloat"></div>
           </div>
           <div class="floatclear" style="height:12px"></div>
           <div id="drawClicker" class="leftFloat"></div>
           <div id="drawDiv">
-            <a href="#">
+            <a onclick="draw()">
               <img src="images/draw.png" />
             </a>
           </div>
         </div>
 
       </div>
-      <div id="resultPage">
+      <div id="resultPage" style="display:none">
         <div id="infoDiv"></div>
         <div id="resultDiv">
         </div>
         <div id="redrawClicker" class="leftFloat"></div>
         <div id="redrawDiv">
-          <a href="#">
+          <a onclick="redraw()">
             <img src="images/redraw.png" />
           </a>
         </div>
