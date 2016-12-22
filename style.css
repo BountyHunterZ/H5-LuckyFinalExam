@@ -5,6 +5,16 @@
   --height-inner: 460px;
 }
 
+input {
+  height: 35;
+  width: 100%;
+  color: #000;
+  padding-left: 5px;
+  padding-right: 5px;
+  position:relative;
+  pointer-events: auto;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -42,12 +52,12 @@ body {
 }
 
 #pocketBack {
-  z-index: -3;
+  z-index: 1;
   background-image: url('images/redpocketback.png');
 }
 
 #pocketInner{
-  z-index: -2;
+  z-index: 2;
 }
 
 #ticket {
@@ -61,12 +71,13 @@ body {
 }
 
 #pocketFront{
-  z-index: -1;
+  pointer-events: none;
+  z-index: 3;
   background-image: url('images/redpocketfront.png');
 }
 
 #cornerMark {
-  z-index: 2;
+  z-index: 4;
   margin-top: 10px;
   background-color: var(--color-envelope);
   width: 205px;
@@ -114,7 +125,7 @@ body {
 
 #nameInputDiv {
   margin: 10px 15px 0 15px;
-  border-color: #fad133;
+  border-color: #000;
 }
 
 .leftFloat{
@@ -124,6 +135,7 @@ body {
 
 .floatclear {
   clear: both;
+  pointer-events: none;
 }
 
 #subjectLabelDiv {
