@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
-  <body>
+  <body onload="pageOnload()">
     <div id="universal">
       <div id="formPage" style="display:none">
         <div id="pocketBack" class="formPart">
@@ -54,8 +54,17 @@
 
       </div>
       <div id="resultPage">
-
+        <div id="infoDiv"></div>
+        <div id="resultDiv">
+        </div>
+        <div id="redrawClicker" class="leftFloat"></div>
+        <div id="redrawDiv">
+          <a href="#">
+            <img src="images/redraw.png" />
+          </a>
+        </div>
       </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
