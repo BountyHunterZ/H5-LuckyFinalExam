@@ -66,6 +66,7 @@ body {
 }
 
 #cornerMark {
+  z-index: 2;
   margin-top: 10px;
   background-color: var(--color-envelope);
   width: 205px;
@@ -79,13 +80,18 @@ body {
 }
 
 #titleDiv {
-  background-image: url('images/bigtitle.png');
-  background-size: contain;
-  width: 277px;
-  height: 123px;
+  width: 100%;
+  margin-top: -5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#titleDiv > img {
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -10px;
+  max-width: 277px;
+  max-height: 123px;
 }
 
 #nameLabelDiv {
