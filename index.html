@@ -22,7 +22,7 @@
             <div id="nameLabelDiv">
             </div>
             <div id="nameInputDiv" class="inputDiv">
-              <input id="nameValue" type="text" maxlength="4" placeholder="1到4个字"/>
+              <input id="nameValue" type="text" maxlength="4" oninput="textChange('nameValue')" placeholder="1到4个字"/>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@
           <div id="subjectLabelDiv" class="leftFloat">
           </div>
           <div id="subjectInputDiv" class="inputDiv leftFloat">
-            <input id="subjectValue" type="text" placeholder="高等数学"/>
+            <input id="subjectValue" type="text" oninput="textChange('subjectValue')" maxlength="8" placeholder="高等数学"/>
           </div>
           <div class="floatclear" style="height:12px"></div>
           <div id="timeLabelDiv" class="leftFloat">
@@ -39,20 +39,20 @@
           <div id="timeInputDiv" class="leftFloat">
             <div id="y201" class="leftFloat"></div>
             <div id="yearInput" class="leftFloat inputDiv">
-              <input id="yearValue" type="number" min="6" max="7" step=“1” placeholder="7"/></div>
+              <input id="yearValue" type="number" min="6" max="7" step=“1” maxlength="1" oninput="textChange('yearValue')" placeholder="7"/></div>
             <div id="year" class="leftFloat"></div>
             <div id="monthInput" class="leftFloat inputDiv">
-              <input id="monthValue" type="number" min="1" max="12" step=“1” placeholder="1"/></div>
+              <input id="monthValue" type="number" min="1" max="12" step=“1” maxlength="2" oninput="textChange('monthValue')" placeholder="1"/></div>
             <div id="month" class="leftFloat"></div>
             <div id="dayInput" class="leftFloat inputDiv">
-              <input id="dayValue" type="number" min="1" max="31" step=“1” placeholder="4"/></div>
+              <input id="dayValue" type="number" min="1" max="31" step=“1” maxlength="2" oninput="textChange('dayValue')" placeholder="4"/></div>
             <div id="day" class="leftFloat"></div>
           </div>
           <div class="floatclear" style="height:12px"></div>
           <div id="drawClicker" class="leftFloat"></div>
           <div id="drawDiv">
             <a onclick="draw()">
-              <img src="images/draw.png" />
+              <img id="drawImg" src="images/draw.png" />
             </a>
           </div>
         </div>

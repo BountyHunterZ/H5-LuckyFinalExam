@@ -255,6 +255,7 @@ body {
 #drawDiv > a > img {
   margin-top: 5px;
   width: 85%;
+  opacity: 0.75;
 }
 
 #redrawDiv {
